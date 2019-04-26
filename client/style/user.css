@@ -1,0 +1,291 @@
+html{
+    height: 100%;
+}
+
+.logA{
+    display: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.background-grad{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-image: linear-gradient(45deg, white, #ff5f3d); */
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.btn-outline-secondary{
+    color: white;
+}
+.head{
+    z-index: 12;
+    
+}
+
+.main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    width: 100%;
+    min-height: 100%;
+    z-index: 2;
+    background-image: url(../style/accets/header.jpg); 
+}
+
+.bod{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 50px 200px;
+    border: none;
+    z-index: 11;
+}
+
+.filesBlock{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.poisk{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 7px 7px;
+}
+
+.form-control{
+    width: 85%;
+}
+
+.poisk .btn{
+    width: 15%;
+}
+
+.file-container{
+    margin-top: 50px;
+    width: 100%;
+    height: 550px;
+    padding: 10px;
+    padding-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #736967;
+    background-color: white;
+    overflow: auto;
+    border-radius: 6px 6px;
+}
+
+.header{
+    width: 100%;
+    color: #ccc7c4;
+    border-bottom: 2px solid #736967;
+    background-color: white;
+}
+
+.footer{
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 0px;
+    color: #ccc7c4;
+    border-top: 2px solid #736967;
+    height: 58px;
+    background-color: #4a423f;
+}
+
+.navbar-brand{
+    color: #4a423f;
+}
+
+.buttons .btn{
+    border: none;
+    color: #4a423f;
+}
+
+.file-menu{
+    width: 20%;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.user-block{
+    height: 38px;
+    margin-bottom: 24px;
+
+}
+
+
+.file-menu .btn{
+    width: 260px;
+    height: 70px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    border-radius: 10px 10px;
+}
+
+.add-file{
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    height: 150px;
+    border: 2px solid transparent;
+    border-radius: 10px 10px;
+}
+
+.add-file-display{
+    display: none;
+}
+
+.add-file-image{
+    margin-top: 5px;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+}
+
+.user-block{
+    display: flex;
+    width: 260px;
+    height: 64px;
+}
+
+.user-block p{
+    display: block;
+    margin: auto 0;
+    padding: 15px 0;
+    width: 196px;
+    height: 64px;
+}
+
+.myDisplay{
+    display: none;
+}
+
+.file-container p{
+    margin: 5px;
+    padding: 5px;
+    word-wrap: break-word;
+    width: 140px;
+    height: 94px;
+    color: #77726f;
+    text-align: center;
+}
+
+.user-image{
+    width: 64px;
+    height: 64px;
+}
+
+#searchBtn:hover{
+    background-color: rgb(157, 156, 160);
+    color: #4a423f;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 25px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    background-color: #838080;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
+.outlicneClass{
+    transition: 0.5s;
+    border-color: #6796c8;
+    box-shadow: 0 0 5px rgba(51,65,80,0.5);
+}
+
+#searchBtn{
+    border: none;
+    background-color: white;
+
+
+
+}
+
+@media screen and (max-width: 1400px){
+    .bod{
+        margin: 50px 125px;
+    }
+    
+    .file-menu{
+        width: 300px;
+        margin-left: 25px;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .bod{
+        flex-direction: column;
+        margin: 50px 100px;
+    }
+
+    .user-block{
+        display: none;
+    }
+    
+    .file-menu{
+        width: 77%;
+        margin-right: 10px;
+        margin-top: 30px;
+        margin-left: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .add-file{
+        width: 110px;
+        height: 120px;
+    }
+
+    .bod{
+        margin: 50px 25px;
+    }
+
+    .filesBlock{
+        width: 100%;
+        margin: 0;
+    }
+
+    .file-menu{
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 20px;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .file-menu .btn{
+        margin: 0px;
+    }
+}

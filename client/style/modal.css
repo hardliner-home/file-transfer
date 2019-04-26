@@ -1,0 +1,99 @@
+.modal-open{
+    padding: 0;
+}
+
+.myBod{
+    padding: 0;
+}
+
+.modal-mySize{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.modal-dialog{
+    margin: auto auto;
+    width: 400px;
+    height: 450px;
+    padding: 0;
+}
+
+
+.modal-title{
+    margin-left: 3%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.modal-content{
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+.modal-content p{
+    font-size: 20px;
+    color: #77726f;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.modal-footer{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+
+}
+
+.modal-footer .btn:first-child{
+    margin-left: 8%;
+    margin-right: 2%;
+}
+
+.input{
+    display: flex;
+    margin: 0px 0 10px 0px;
+}
+
+.input input{
+    width: 60%;
+}
+
+.input p{
+    margin: auto 0;
+    width: 50px;
+}
+
+.form-control{
+    margin-left: 40px;
+    width: 40%;
+}
+
+#check{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+
+.input input + p{
+    margin: 0; 
+    margin-left: 15px;
+    width: auto;
+}
+
+#first-p{
+    margin-bottom: 10%;
+}
+
+.modal-body .input:nth-child(3){
+    margin-bottom: 10%;
+
+}

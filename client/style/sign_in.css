@@ -1,0 +1,172 @@
+html{
+    height: 100%;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 58px;
+}
+
+
+.bod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.log{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.image-box{
+    margin: 15px 0 15px 0;
+}
+
+.image-box img{
+    max-width: 96px;
+    max-height: 96px;
+}
+
+.input-data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 440px;
+    height: 150px;
+    min-height: 100px;
+    margin-bottom: 10px;
+}
+
+
+
+.input-data p {
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+
+.form-control{
+    background-color: #edeff0;
+}
+
+
+.myFormControll{
+    width: 400px;
+    height: 50px;
+}
+
+#formId{
+    background-color: #edeff0;
+    height: 50px;
+    min-height: 50px;
+}
+
+.footer{
+    margin-bottom: 30px;
+}
+
+#myBtnStyle{
+    font-size: 23px;
+}
+
+.input-data p:last-child{
+    color: hsl(0,0%,60%);
+    font-size: 15px;
+}
+
+#private{
+    text-decoration: underline;
+}
+
+.textBlock{
+    display: flex;
+    justify-content: center;
+}
+
+.textBlock p{
+    display: block;
+    color: hsl(0,0%,60%);
+    font-size: 19px;
+    margin:  0;
+}
+
+.images-block img{
+    width: 32px;
+    height: 32px;
+}
+
+.alert{
+    width: 70%;
+    margin-top: 0px;
+    display: none;
+    animation: clickBut 0.5s forwards;
+    position: absolute;    
+
+}
+
+.alert p{
+    font-size: 21px;
+    text-align: center;
+    margin: 0;
+}
+
+.alertVisible{
+    display: block;
+    animation: clickBut 0.5s forwards;
+    left: 15%;
+    
+}
+
+#myAlert{
+    position: absolute;
+}
+
+.data-input-block{
+    min-height: 50px;
+}
+
+
+@media screen and (max-width: 560px){
+    .alert{
+        width: 100%;
+    }
+    
+    .alertVisible{
+        left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px){
+    .textBlock p{
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes clickBut{
+    0%{ transform: translate(0px, 0px);
+        opacity: 0;}
+    100%{transform: translate(0, 50px);
+         opacity: 1;}
+}
